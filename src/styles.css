@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; --mat-toolbar-title-text-font: fantasy; --blue: #0A66C2 }
+body { margin: 0; font-family: fantasy, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.white-backgrounded-field .mdc-text-field--outlined .mdc-notched-outline {
+    z-index: 0
+  }
+  
+  .white-backgrounded-field .mdc-notched-outline__notch,
+  .white-backgrounded-field .mdc-notched-outline__leading,
+  .white-backgrounded-field .mdc-notched-outline__trailing {
+    background-color: white;
+  }
+
+  .blue {
+    color: var(--blue) !important;
+}
+
+.bg-black {
+    background-color: black !important;
+    color: white !important;
+}
+
+.bg-white {
+    background-color: white !important;
+    color: black !important;
+}
+
+.bg-blue {
+    background-color: var(--blue) !important;
+    color: white !important;
+}

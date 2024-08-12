@@ -1,0 +1,40 @@
+.sidenav {
+    border-radius: 0 !important;
+
+}
+
+.sidenav-container {
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sidenav-container>a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 1cm;
+    line-height: 1cm;
+}
+
+.sidenav-container>a:hover {
+    font-size: 1.1cm;
+    
+}
+
+.close-button {
+    
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    
+}
+
+.close-button>mat-icon {
+    font-size: 25px !important;
+    text-align: center;
+    color: white;
+}

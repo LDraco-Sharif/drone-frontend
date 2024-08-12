@@ -1,0 +1,17 @@
+<mat-sidenav-container class="example-container"  [hasBackdrop]="true">
+    <mat-sidenav #sidenav class="sidenav bg-blue" [fixedInViewport]="true" position="end" mode="over" >
+        <div class="sidenav-container">
+            <a href="">OPTION 1</a>
+            <a href="">OPTION 2</a>
+            <a href="">OPTION 2</a>
+            <button mat-icon-button class="close-button" (click)="sidenav.close()">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+    </mat-sidenav>
+    <app-nav-bar (menuClickEvent)="sidenav.toggle()"></app-nav-bar>
+    <app-bg-video></app-bg-video>
+    <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+

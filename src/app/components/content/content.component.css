@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 80vh;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    min-width: 400px;
+    background-color: white;
+    animation: wrapper-fill linear forwards;
+    animation-timeline: scroll(root);
+    animation-range: entry 0% cover 20%;
+}
+
+@keyframes wrapper-fill {
+    to {
+        width: 100vw;
+    }
+    
+}
+
+.content{
+    width: 60vw;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.card {
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+}
+
+.card-content>:nth-child(odd) {
+    position: relative;
+    right: 10vw;
+    box-shadow: 1px 1px 5px;
+    width: 60%;
+    padding: 20px;
+}
+
+.card-content>:nth-child(even) {
+    position: relative;
+    left: 30vw;
+    box-shadow: 1px 1px 5px;
+    width: 60%;
+    padding: 20px;
+}
+
+.card-content>:nth-child(n+2) {
+    margin-top: -5px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.content-title-start, .content-title {
+    width: 100%;
+    font-size: xxx-large;
+    line-height: 1.5cm;
+    padding-top: 10px;
+}
+
+.content-title-punchline {
+    padding-top: 10vh;
+    opacity: 0;
+    animation: punchline-slide-in  linear forwards;
+    animation-timeline: scroll(root);
+    animation-range: entry 5% cover 8%;
+}
+
+@keyframes punchline-slide-in {
+    to {
+        padding-top: 0;
+        opacity: 1;
+    }
+}
+
+.card-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: x-large ;
+    line-height: .7cm;
+}
+
+.card-item {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.item-title {
+    font-size: x-large;
+}
+
+.last-card {
+    padding-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.contact {
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    padding-top: 20px;
+    background-color: var(--blue);
+    color: white;
+}
+
+
